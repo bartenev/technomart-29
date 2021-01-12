@@ -55,6 +55,37 @@
        url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Variables */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-red: #EE3643;
+  
+  --basic-green: #63A63E;
+  --basic-grey: #A9A9A9;
+
+  --light-blue: #F3F7F9;
+  --lighten-blue: #F1F5F7;
+  --dark-blue: #293449;
+  --darken-blue: #32425C;
+
+  --light-yellow: #FFD180;
+
+  --promo-block-yellow: #FFBF47;
+  --promo-block-dark-yellow: #FFC047;
+  --promo-block-blue: #3BBCE3;
+  --promo-block-pink: #DC91D8;
+  --promo-block-green: #8ED78F;
+  --promo-block-yellow: #FFBF47;
+
+  --account-white: rgba(0, 0, 0, 0.0001);
+
+  --logo-gradient: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+
+
+  
+}
 body {
   font-family: "Cuprum", Arial, sans-serif;
 }
