@@ -61,14 +61,24 @@
   --basic-white: #FFFFFF;
   --basic-black: #000000;
   --basic-red: #EE3643;
-  
   --basic-green: #63A63E;
   --basic-grey: #A9A9A9;
+
+  --logo-click: #BA2732;
+
+
+  --light-green: #5FBB2D;
+  --dark-green: #518534;
+  --light-grey: #C5C5C5;
+  --dark-red: #CA2C37;
+
+
 
   --light-blue: #F3F7F9;
   --lighten-blue: #F1F5F7;
   --dark-blue: #293449;
   --darken-blue: #32425C;
+  --very-dark-blue: #161D29;
 
   --light-yellow: #FFD180;
 
