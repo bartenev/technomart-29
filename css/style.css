@@ -309,33 +309,33 @@ body {
   color: var(--darken-blue);
 }
 
-.popular-goods-heading,
-.popular-goods-manufacturers {
+.products-heading,
+.products-manufacturers {
   background-color: var(--beige);
 
 }
 
-.popular-goods-item {
+.products-item {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
 }
 
-.popular-goods-card-name {
+.products-card-name {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 
-.popular-goods-card-old-price {
+.products-card-old-price {
   color: var(--basic-grey);
   text-decoration-line: line-through;
   text-align: center;
   text-transform: uppercase;
 }
 
-.popular-goods-card-new-price {
+.products-card-new-price {
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-transform: uppercase;
@@ -391,11 +391,12 @@ body {
 
 /* Services */
 
-.services {
+.services,
+.about-product {
   background-color: var(--lighten-blue);
 }
 
-.heading-services {
+.info-section-header {
   color: var(--basic-black);
 }
 
