@@ -354,8 +354,20 @@
     </footer>
     <section class="modal modal-feedback">
       <h2>Форма обратной связь</h2>
-      <form>
-        <!-- Форма обратной связи-->
+      <form action="#" method="get">
+        <label>
+          Ваше имя:
+          <input class="modal-feedback-input" type="text" name="fullname" placeholder="Имя Фамилия" required>
+        </label>
+        <label>
+          Ваш e-mail:
+          <input class="modal-feedback-input" type="email" name="email" placeholder="email@example.com" required>
+        </label>
+        <label>
+          Текст-письма:
+          <textarea class="modal-feedback-input" name="modal-feedback-text" rows="5" cols="50" placeholder="В свободной форме" required></textarea>
+        </label>
+        <input class="button modal-feedback-submit" type="submit" name="submit">
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
