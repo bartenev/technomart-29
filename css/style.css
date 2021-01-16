@@ -69,6 +69,7 @@
   --basic-red: #EE3643;
   --dark-red: #CA2C37;
   --darken-red: #BA2732;
+  --extra-dark-red: #B52933;
 
   --basic-grey: #A9A9A9;
   --light-grey: #C5C5C5;
@@ -152,6 +153,11 @@ body {
 .menu-item,
 .menu-item-search {
   color: var(--basic-white);
+}
+
+.main-header-logo {
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--extra-dark-red);
 }
 
 .menu-item-search {
@@ -248,6 +254,10 @@ body {
   font-weight: 700;
 }
 
+.promo-block-item {
+  background-repeat: no-repeat;
+}
+
 .promo-block-item-inscription {
   font-size: 14px;
   line-height: 18px;
@@ -267,22 +277,32 @@ body {
 
 .promo-block-item-materials {
   background-color: var(--promo-block-yellow);
+  background-image: url(../img/materials.svg);
+  background-size: 44px 65px;
 }
 
 .promo-block-item-tool {
   background-color: var(--promo-block-blue);
+  background-image: url(../img/tool.svg);
+  background-size: 75px 61px;
 }
 
 .promo-block-item-technics {
   background-color: var(--promo-block-pink);
+  background-image: url(../img/technics.svg);
+  background-size: 78px 62px;
 }
 
 .promo-block-item-sale {
   background-color: var(--promo-block-green);
+  background-image: url(../img/sale.svg);
+  background-size: 59px 72px;
 }
 
 .promo-block-item-delivery {
   background-color: var(--promo-block-dark-yellow);
+  background-image: url(../img/delivery.svg);
+  background-size: 78px 63px;
 }
 
 .slider-perforators {
@@ -434,6 +454,12 @@ body {
   box-shadow: 0px 1px 0px var(--basic-white);
 }
 
+.slider-services-delivery-info {
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-size: 468px 261px;
+}
+
 .slider-services-button:hover {
   background-color: var(--dark-blue);
 }
@@ -475,6 +501,10 @@ body {
 .footer-navigation-additional-item a:active {
   text-decoration: none;
   opacity: 0.5;
+}
+
+.footer-social-button {
+  background-image: linear-gradient(0deg, #212A3A, #212A3A);; 
 }
 
 .footer-feedback-link:active {
