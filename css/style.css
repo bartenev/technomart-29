@@ -102,8 +102,6 @@
 
   --special-transparent: rgba(0, 0, 0, 0.0001);
 
-  --logo-gradient: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-
   --beige: #F9F5F0;
 }
 
@@ -153,6 +151,7 @@ body {
 .menu-item,
 .menu-item-search {
   color: var(--basic-white);
+  background-repeat: no-repeat;
 }
 
 .main-header-logo {
@@ -164,6 +163,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
+  background-image: url("../img/icon-search.svg");
   border: none;
 }
 
@@ -171,6 +171,14 @@ body {
   font-family: inherit;
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.menu-item-bookmarks {
+  background-image: url("../img/icon-bookmark.svg");
+}
+
+.menu-item-basket {
+  background-image: url("../img/icon-cart.svg");
 }
 
 .menu-item-navigation:hover {
@@ -215,6 +223,8 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-red);
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
 }
 
 .header-contacts-address {
@@ -236,6 +246,11 @@ body {
 
 .account-link-item:active {
   color: var(--light-grey);
+}
+
+.login-link {
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
 }
 
 .site-navigation {
