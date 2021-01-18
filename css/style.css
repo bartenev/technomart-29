@@ -86,6 +86,7 @@
   --extra-dark-blue: #405069;
   --navy-blue: #1D2739;
   --light-navy-blue: #F2F6F8;
+  --dark-navy-blue: #212A3A;
 
   --basic-yellow: #FFD180;
   --light-yellow: #F7F3EC;
@@ -519,7 +520,12 @@ body {
 }
 
 .footer-social-button {
-  background-image: linear-gradient(0deg, #212A3A, #212A3A);; 
+  background-color: var(--dark-navy-blue); 
+}
+
+.footer-social-button:hover,
+.footer-social-button:active {
+  background-color: var(--basic-red); 
 }
 
 .footer-feedback-link:active {
