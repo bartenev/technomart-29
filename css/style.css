@@ -108,6 +108,10 @@
   --beige: #F9F5F0;
 }
 
+/* Outline*/
+
+/*  outline:5px solid var(--basic-red);*/
+  
 /* Body */
 
 .page-body {
@@ -554,7 +558,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 89px;
+  min-height: 89px;
 }
 
 .products-list,
@@ -786,10 +790,19 @@
 }
 
 .services {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-areas: 
+    "service-header service-header"
+    "service-slider slider-info";
+  column-gap: 80px;
+  grid-row-gap: 70px;
   padding-top: 64px;
+  padding-bottom: 99px;
+}
+
+.services-header {
+  grid-area: service-header;
 }
 
 .info-section-header {
@@ -801,16 +814,16 @@
   display: flex;
   flex-wrap: wrap;
   width: 400px;
-  margin-bottom: 70px;
 }
 
-.slider-services {
+/*.slider-services {
   display: flex;
   flex-wrap: wrap;
   min-height: 280px;
-}
+}*/
 
 .slider-services-list {
+  grid-area: service-slider;
   margin: 0;
   padding: 0;
   display: flex;
@@ -833,7 +846,6 @@
   padding-left: 22px;
   width: 240px;
   min-height: 61px;
-  margin-right: 80px;
 }
 
 .slider-services-delivery {
@@ -843,11 +855,22 @@
 }
 
 .slider-services-info {
-  width: 100%;
- /* background-image: url("../img/delivery.png");
-  background-position: right bottom;
+  grid-area: slider-info;
+  position: relative;
+  z-index: 1;
+}
+
+.slider-services-info::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  right: 0;
+  background-image: url("../img/delivery.png");
+  background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 468px 261px;*/
+  width: 468px;
+  height: 261px;
+  z-index: -1;
 }
 
 .slider-services-heading {
@@ -861,20 +884,27 @@
 /* About company*/
 
 .about-company {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  column-gap: 180px;
+  padding: 70px 0;
+}
+
+.about-company-info,
+.about-company-contacts {
   display: flex;
-  margin: 70px 0;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .about-company-info {
-  width: 460px;
-  margin-right: 180px;
+  margin-bottom: 1px;
 }
+
 
 .transport-companies-list {
   margin: 0;
-  padding: 0;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .about-company-button {
@@ -885,7 +915,22 @@
 .transport-companies-item {
   font-size: 18px;
   line-height: 24px;
-  list-style-image: url("../img/list-style.svg");
+  position: relative;
+  padding-left: 37px;
+}
+
+.transport-companies-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.transport-companies-item::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: var(--basic-red);
 }
 
 .map {
@@ -976,7 +1021,7 @@
   justify-content: center;
   align-items: center;
   width: 44px;
-  height: 44px;
+  min-height: 44px;
   background-color: var(--dark-navy-blue); 
   border-radius: 50%;
 }
