@@ -16,6 +16,9 @@
           <section class="top-menu">
             <form class="menu-item-search-form" action="#" method="POST">
               <input class="menu-item-search" type="search" placeholder="Поиск:">
+              <svg class="menu-item-search-img" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+              </svg>
             </form>
             <a class="menu-item menu-item-bookmarks" href="blank.html">Закладки: 0</a>
             <a class="menu-item menu-item-basket" href="blank.html">Корзина: 0</a>
@@ -98,11 +101,24 @@
               <h3 class="promo-block-heading">Доставка</h3>
               <a class="promo-block-item-inscription" href="blank.html">Бесплатно</a>
             </li>
-            <li class="promo-block-slider">
-                <h3 class="promo-block-slider-heading">Перфораторы</h3>
-                <p class="promo-block-slider-inscription">Настоящие мужские игрушки</p>
-                <button class="promo-block-slider-button-next" type="button" aria-label="Следующий слайд"></button>
+            <li class="promo-block-slider promo-block-slider-2">
+              <ul class="promo-block-slider-list">
+                <li class="promo-block-slider-item">
+                    <h3 class="promo-block-slider-heading">Дрели</h3>
+                    <p class="promo-block-slider-inscription">Соседям на радость!</p>
+                    <button class="promo-block-slider-button-next" type="button" aria-label="Предыдущий слайд"></button>
+                  </li>
+                  <li class="promo-block-slider-item  promo-block-slider-item-current">
+                    <h3 class="promo-block-slider-heading">Перфораторы</h3>
+                    <p class="promo-block-slider-inscription">Настоящие мужские игрушки</p>
+                    <button class="promo-block-slider-button-previous" type="button" aria-label="Следующий слайд"></button>
+                  </li>
+              </ul>
                 <a class="button promo-block-slider-open-catalog" href="catalog.html">Открыть каталог</a>
+                <div class="promo-block-slider-controls">
+                  <button class="promo-block-slider-controls-button" type="button" aria-label="Первый слайд"></button>
+                  <button class="promo-block-slider-controls-button current" type="button" aria-label="Второй слайд"></button>
+                </div>
             </li>
           </ul>
         </section>
@@ -223,7 +239,7 @@
             </div>
             <ul class="slider-services-list">
               <li class="slider-services-item">
-                <button class="slider-services-button slider-services-delivery" type="button" disabled>Доставка
+                <button class="slider-services-button slider-services-delivery slider-services-current" type="button" disabled>Доставка
                 </button>
               </li>
               <li class="slider-services-item">
@@ -234,15 +250,29 @@
                 <button class="slider-services-button slider-services-credit" type="button">Кредит</button>
               </li>
             </ul>
-            <div class="slider-services-info">
-              <h3 class="heading slider-services-heading">Доставка</h3>
-              <p  class="content-text">
-                Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!
-              </p>
-            </div>
+            <ul class="slider-services-info-list">
+              <li class="slider-services-info-item current">
+                <h3 class="heading slider-services-heading">Доставка</h3>
+                <p  class="content-text">
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="slider-services-info-item">
+                <h3 class="heading slider-services-heading">Гарантия</h3>
+                <p  class="content-text">
+                  Скоро тут будет текст!
+                </p>
+              </li>
+              <li class="slider-services-info-item">
+                <h3 class="heading slider-services-heading">Кредит</h3>
+                <p  class="content-text">
+                  Скоро тут будет текст!
+                </p>
+              </li>
+            </ul>
           </section>
         </div>
       </div>
