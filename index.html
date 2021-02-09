@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
       <div class="top-menu-bar">
         <div class="container">
           <a>
-              <img class="logo header-logo" src="img/main-logo.svg" width="108" height="18" alt="Логотип">
-            </a>
+            <img class="logo header-logo" src="img/main-logo.svg" width="108" height="18" alt="Логотип">
+          </a>
           <section class="top-menu">
             <form class="menu-item-search-form" method="POST" action="https://echo.htmlacademy.ru">
               <input class="menu-item-search" name="search" type="search" placeholder="Поиск:">
@@ -109,7 +109,7 @@
                     <button class="promo-block-slider-button-next" type="button" aria-label="Предыдущий слайд"></button>
                     <button class="promo-block-slider-button-previous" type="button" aria-label="Следующий слайд"></button>
                   </li>
-                  <li class="promo-block-slider-item  promo-block-slider-item-current">
+                  <li class="promo-block-slider-item promo-block-slider-item-current">
                     <h3 class="promo-block-slider-heading">Перфораторы</h3>
                     <p class="promo-block-slider-inscription">Настоящие мужские игрушки</p>
                     <button class="promo-block-slider-button-next" type="button" aria-label="Предыдущий слайд"></button>
@@ -303,8 +303,8 @@
               Вы можете забрать товар сами,<br>
               заехав в наш офис:
             </p>
-            <img class="map" src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу: ул. Большая Конюшенная 19, Санкт-Петербург">
-            <button class="button contacts-button" type="button">Заблудились? Напишите нам!</button>
+            <a class="map" href="blank.html" type="button" aria-label="Офис компании по адресу: ул. Большая Конюшенная 19, Санкт-Петербург"></a>
+            <a class="button contacts-button" href="blank.html" type="button">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -389,7 +389,7 @@
                 <a class="footer-feedback-link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
               <div class="footer-feedback-site">
-                <p class="footer-feedback-text">Разработано  — </p>
+                <p class="footer-feedback-text">Разработано  —</p>
                 <a class="footer-feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
               </div>
             </section>
@@ -399,19 +399,19 @@
     </footer>
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связь</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form class="modal-feedback-form" method="get" action="https://echo.htmlacademy.ru">
         <div class="feedback-form-block">
           <label>
             Ваше имя:
-            <input class="modal-feedback-input" type="text" name="fullname" placeholder="Имя Фамилия" required>
+            <input class="modal-feedback-input" type="text" name="fullname" placeholder="Имя Фамилия">
           </label>
           <label>
             Ваш e-mail:
-            <input class="modal-feedback-input" type="email" name="email" placeholder="email@example.com" required>
+            <input class="modal-feedback-input" type="email" name="email" placeholder="email@example.com">
           </label>
           <label class="feedback-letter">
             Текст-письма:
-            <textarea class="modal-feedback-input modal-feedback-input-letter" name="modal-feedback-text"  placeholder="В свободной форме" required></textarea>
+            <textarea class="modal-feedback-input modal-feedback-input-letter" name="modal-feedback-text"  placeholder="В свободной форме"></textarea>
           </label>
         </div>
         <div class="send-button-block">
@@ -422,8 +422,17 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти?</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3025891851549!2d30.322143!3d59.9386934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1612178473379!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3025891851549!2d30.322143!3d59.9386934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1612178473379!5m2!1sru!2sru" width="940" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+    <section class="modal modal-basket">
+      <h2>Товар добавлен в корзину!</h2>
+      <div class="button-block">
+        <a class="button modal-basket-checkout" href="blank.html">Оформить заказ</a>
+        <button class="button modal-basket-continue-shopping" type="button" name="continue-shopping">Продолжить покупки</button>
+      </div>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
